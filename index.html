@@ -18,6 +18,15 @@
             backgroundImage: {
               hero: "url('./assets/bg.jpg')",
             },
+            keyframes: {
+              pulseCircle: {
+                "0%, 100%": { transform: "scale(1)" },
+                "50%": { transform: "scale(1.3)" },
+              },
+            },
+            animation: {
+              pulseCircle: "pulseCircle 2s ease-in-out infinite",
+            },
           },
         },
       };
@@ -57,7 +66,7 @@
           <img
             src="./assets/hero-circle.png"
             alt=""
-            class="w-50 h-50 mx-auto"
+            class="w-50 h-50 mx-auto animate-pulseCircle"
           />
           <img
             class="w-16 absolute top-0 right-0 bottom-0 left-0 m-auto"
@@ -352,7 +361,7 @@
             alt=""
           />
 
-          <div class="lg:grid-cols-1 lg:gap-4">
+          <div class="lg:grid-cols-1 lg:gap-8">
             <h3 class="text-xl font-semibold text-white">Alex Kumar</h3>
             <p class="text-white/80 text-sm">
               Tech entrepreneur, productivity expert, and lifelong learner. Alex
@@ -361,7 +370,7 @@
               insights from industry leaders and practical advice for anyone
               looking to grow in tech.
             </p>
-            <div class="flex gap-1.5 justify-center">
+            <div class="flex gap-1.5 justify-center lg:justify-start">
               <div
                 class="relative w-9 h-9 rounded-full border-2 border-white/20 flex items-center justify-center"
               >
