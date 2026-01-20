@@ -136,13 +136,15 @@
         </div>
       </section>
 
-      <section class="px-5 py-10 bg-[rgba(35,14,61,1)]">
+      <section class="px-5 py-10 bg-[rgba(35,14,61,1)] lg:px-[200px]">
         <h2 class="text-3xl font-bold text-white mb-8">Why Choose TechWave</h2>
 
         <!-- Flex container for cards -->
-        <div class="grid grid-cols-1 gap-6">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:grid-rows-3">
           <!-- Card 1 -->
-          <div class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl">
+          <div
+            class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3"
+          >
             <img
               class="w-12 mb-4"
               src="./assets/headphone.png"
@@ -159,7 +161,9 @@
           </div>
 
           <!-- Card 2 -->
-          <div class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl">
+          <div
+            class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl lg:col-start-2 lg:col-end-4 lg:row-start-1 lg:row-end-2"
+          >
             <img
               class="w-12 mb-4"
               src="./assets/device.png"
@@ -175,7 +179,9 @@
           </div>
 
           <!-- Card 3 -->
-          <div class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl">
+          <div
+            class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl lg:col-start-2 lg:col-end-4 lg:row-start-2 lg:row-end-3"
+          >
             <img
               class="w-12 mb-4"
               src="./assets/location.png"
@@ -190,7 +196,9 @@
           </div>
 
           <!-- Card 4 -->
-          <div class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl">
+          <div
+            class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl lg:col-start-1 lg:col-end-3 lg:row-start-3 lg:row-end-4"
+          >
             <img
               class="w-12 mb-4"
               src="./assets/location.png"
@@ -208,7 +216,9 @@
           </div>
 
           <!-- Card 5 -->
-          <div class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl">
+          <div
+            class="bg-[rgba(53,17,101,0.4)] p-6 rounded-3xl lg:col-start-3 lg:col-end-4 lg:row-start-3 lg:row-end-4"
+          >
             <img
               class="w-12 mb-4"
               src="./assets/resource.png"
@@ -225,10 +235,10 @@
         </div>
       </section>
 
-      <section class="px-5 py-10 bg-[rgba(37,13,68,1)]">
+      <section class="px-5 py-10 bg-[rgba(37,13,68,1)] lg:px-48">
         <h2 class="text-3xl font-bold text-white mb-8">Featured Episodes</h2>
 
-        <div class="grid grid-cols-1 gap-6">
+        <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <!-- Card 1 -->
           <div class="bg-[rgba(53,17,101,0.4)] rounded-3xl">
             <iframe
@@ -327,14 +337,14 @@
         </div>
       </section>
 
-      <section class="px-5 py-10 bg-[rgba(37,13,68,1)]">
+      <section class="px-5 py-10 bg-[rgba(37,13,68,1)] lg:px-48">
         <h2 class="text-3xl font-bold text-white mb-8 text-center">
           Meet The Host
         </h2>
 
         <!-- Card 1 -->
         <div
-          class="grid grid-cols-1 bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 place-items-center text-center gap-3"
+          class="grid grid-cols-1 lg:grid-cols-2 bg-[rgba(53,17,101,0.4)] rounded-3xl p-6 place-items-center text-center lg:text-left gap-3"
         >
           <img
             src="./assets/host.png"
@@ -342,7 +352,7 @@
             alt=""
           />
 
-          <div>
+          <div class="lg:grid-cols-1 lg:gap-4">
             <h3 class="text-xl font-semibold text-white">Alex Kumar</h3>
             <p class="text-white/80 text-sm">
               Tech entrepreneur, productivity expert, and lifelong learner. Alex
@@ -351,28 +361,28 @@
               insights from industry leaders and practical advice for anyone
               looking to grow in tech.
             </p>
-          </div>
-          <div class="flex gap-1.5 justify-center">
-            <div
-              class="relative w-9 h-9 rounded-full border-2 border-white/20 flex items-center justify-center"
-            >
-              <img src="./assets/linkedin.png" alt="" srcset="" />
-            </div>
-            <div
-              class="relative w-9 h-9 rounded-full border-2 border-white/20 flex items-center justify-center"
-            >
-              <img src="./assets/x.png" alt="" />
-            </div>
-            <div
-              class="relative w-9 h-9 rounded-full border-2 border-white/20 flex items-center justify-center"
-            >
-              <img src="./assets/instagram.png" alt="" srcset="" />
-            </div>
+            <div class="flex gap-1.5 justify-center">
+              <div
+                class="relative w-9 h-9 rounded-full border-2 border-white/20 flex items-center justify-center"
+              >
+                <img src="./assets/linkedin.png" alt="" srcset="" />
+              </div>
+              <div
+                class="relative w-9 h-9 rounded-full border-2 border-white/20 flex items-center justify-center"
+              >
+                <img src="./assets/x.png" alt="" />
+              </div>
+              <div
+                class="relative w-9 h-9 rounded-full border-2 border-white/20 flex items-center justify-center"
+              >
+                <img src="./assets/instagram.png" alt="" srcset="" />
+              </div>
 
-            <div
-              class="relative w-9 h-9 rounded-full border-2 border-white/20 flex items-center justify-center"
-            >
-              <img src="./assets/youtube.png" alt="" srcset="" />
+              <div
+                class="relative w-9 h-9 rounded-full border-2 border-white/20 flex items-center justify-center"
+              >
+                <img src="./assets/youtube.png" alt="" srcset="" />
+              </div>
             </div>
           </div>
         </div>
@@ -381,10 +391,10 @@
 
     <footer>
       <section
-        class="bg-[url('./assets/footer-bg.png')] h-48 bg-cover bg-center flex flex-col items-center justify-center text-sm text-white gap-6"
+        class="bg-[url('./assets/footer-bg.png')] h-48 lg:h-96 bg-cover bg-center flex flex-col items-center justify-center text-sm text-white gap-6"
       >
         <img src="./assets/logo.png" alt="" srcset="" />
-        <div class="grid grid-cols-2 gap-y-3">
+        <div class="grid grid-cols-2 lg:grid-cols-4 lg:gap-x-6 gap-y-3">
           <div class="flex items-center gap-1">
             <img src="./assets/spotify.png" alt="" srcset="" />
             <p>Spotify</p>
